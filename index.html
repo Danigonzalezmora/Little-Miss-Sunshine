@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+     <title>Daniela Gonzalez</title>
+</head>
+
+<body>
+     <header>
+          <img id="portada" src="./imagenes/poster3.jpg" alt="Little Miss Sunshine">
+          <nav>
+               <div class="etiquetas">
+                    <p class="boton tag">comedia</p>
+                    <p class="boton tag">british</p>
+               </div>
+               <h1>Little Miss Sunshine</h1>
+               <div id="año-pelicula-duracion">
+                    <h2 class="año-pelicula">2016</h2>
+                    <h2 class="año-pelicula">PELICULA</h2>
+                    <h2 class="año-pelicula">1h 41m</h2>
+               </div>
+               <div class="contenedor-botones">
+                    <button class="boton top">
+                         ver ahora
+                    </button>
+                    <button class="boton top">
+                         ver más tarde
+                    </button>
+               </div>
+          </nav>
+     </header>
+     <main>
+          <aside>
+               <div id="caracteristicas1">
+                    <h3>creador</h3>
+                    <h2>Valerie Faris</h2>
+                    <br>
+                    <h3>director</h3>
+                    <h2>Jonathan Dayton</h2>
+               </div>
+               <div id="caracteristicas2">
+                    <h3>elenco</h3>
+                    <h2>Greg Kinnear</h2>
+                    <h2>Toni Collette</h2>
+                    <h2>Toni Collette</h2>
+                    <h2>Steve Carell</h2>
+                    <h2>Paul Dano</h2>
+                    <h2>Abigail Breslin</h2>
+                    <h2>Alan Arkin</h2>
+               </div>
+          </aside>
+          <article>
+               <p class="sinopsis">
+                    Los Hoover son una familia muy peculiar: el abuelo esnifa cocaína y suelta palabrotas, el padre
+                    fracasa
+                    estrepitosamente dando cursos para alcanzar el éxito, la madre no da abasto, el tío se está
+                    recuperando
+                    de un suicidio frustrado tras ser abandonado por su novio, el hijo adolescente lee a Nietzsche y
+                    guarda
+                    un mutismo absoluto. Y Olive, la hija pequeña, una niña gafotas y más bien gordita, quiere ser una
+                    reina
+                    de la belleza...
+               </p>
+               <p class="sinopsis-show">
+                    Los Hoover son una familia muy peculiar: el abuelo esnifa cocaína y suelta palabrotas, el padre
+                    fracasa
+                    estrepitosamente dando cursos para alcanzar el éxito, la madre no da abasto, el tío se está
+                    recuperando
+                    de un suicidio frustrado tras ser abandonado por su novio, el hijo adolescente lee a Nietzsche y
+                    guarda
+                    un mutismo absoluto. Y Olive, la hija pequeña, una niña gafotas y más bien gordita, quiere ser una
+                    reina
+                    de la belleza. Cuando, gracias a un golpe de suerte, la invitan a participar en el concurso de
+                    'Pequeña
+                    Miss Sunshine', en California, la acompaña toda la familia. Hacinados en una destartalada furgoneta
+                    Volkswagen, se dirigen hacia el Oeste en un trágicómico periplo de tres días lleno de inesperadas
+                    sorpresas. El debut de Olive será el detonante de un cambio profundo en esta familia de inadaptados
+               </p>
+               <button class="boton mas">
+                    más información
+               </button>
+               <button class="boton menos">
+                    mostrar menos
+               </button>
+          </article>
+     </main>
+     <footer>
+          <div class="pie-pagina">
+               <p>Get the IMDb App</p>
+               <p>Help</p>
+               <p>Site Index</p>
+               <p>IMDbProBox</p>
+          </div>
+          <div class="pie-pagina">
+               <p>IMDb Developer</p>
+               <p>Press Room</p>
+               <p>Advertising</p>
+               <p>Jobs</p>
+          </div>
+          <div class="pie-pagina tres">
+               <p>Conditions of Use</p>
+               <p>Privacy Policy</p>
+               <p>Interest-Based</p>
+               <p>Ads</p>
+          </div>
+          <div class="pie-pagina cuatro">
+               <img id="logoimbd" class="pie-pagina" src="./imagenes/logo-footer.png" alt="IMDb">
+               <p>Copyright 2021</p>
+          </div>
+     </footer>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+     <script> 
+          $(".mas").on("click", function () {
+               $(".sinopsis-show").show();
+               $(".sinopsis").hide();
+               $(".menos").show();
+               $(".mas").hide();
+          });
+
+          $(".menos").on("click", function () {
+               $(".sinopsis-show").hide();
+               $(".sinopsis").show();
+               $(".menos").hide();
+               $(".mas").show();
+          });
+     </script>
+</body>
+
+</html>
